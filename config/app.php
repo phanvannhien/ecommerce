@@ -249,6 +249,7 @@ return [
         Webkul\CMS\Providers\CMSServiceProvider::class,
         Webkul\PWA\Providers\PWAServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
+        Webkul\Onepay\Providers\OnepayServiceProvider::class,
 
     ],
 

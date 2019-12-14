@@ -65,7 +65,7 @@
     <div class="form-container" v-if="this.new_billing_address">
 
         <div class="form-header">
-            <h1>{{ __('shop::app.checkout.onepage.billing-address') }}</h1>
+            <h3>{{ __('shop::app.checkout.onepage.billing-address') }}</h3>
 
             @auth('customer')
                 @if(count(auth('customer')->user()->addresses))

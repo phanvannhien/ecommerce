@@ -39,11 +39,12 @@
 
 @section('content-wrapper')
     {!! view_render_event('bagisto.shop.home.content.before') !!}
-
-nhien phan
-
-    {!! DbView::make($channel)->field('home_page_content')->with(['sliderData' => $sliderData])->render() !!}
-
+    @include("shop::home.slider")
+    <div class="home-banner mb-5">
+    {!! DbView::make(core()->getCurrentChannel())->field('home_page_content')->render() !!}
+    </div>
+    @include ('shop::home.featured-products')
+    @include ('shop::home.new-products')
     {{ view_render_event('bagisto.shop.home.content.after') }}
 
 @endsection

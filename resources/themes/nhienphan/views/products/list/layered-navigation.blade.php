@@ -73,7 +73,7 @@
                         {{ __('shop::app.products.remove-filter-link-title') }}
                     </span>
 
-                    <i class="icon" :class="[active ? 'arrow-up-icon' : 'arrow-down-icon']"></i>
+                    
                 </div>
             </div>
 
@@ -166,7 +166,7 @@
                 return {
                     appliedFilters: [],
 
-                    active: false,
+                    active: true,
 
                     sliderConfig: {
                         value: [
@@ -187,7 +187,7 @@
 
             created: function () {
                 if (!this.index)
-                    this.active = false;
+                    this.active = true;
 
                 if (this.appliedFilterValues && this.appliedFilterValues.length) {
                     this.appliedFilters = this.appliedFilterValues;

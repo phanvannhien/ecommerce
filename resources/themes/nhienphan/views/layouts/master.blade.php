@@ -13,8 +13,10 @@
 
     <link rel="stylesheet" href="{{ bagisto_asset('css/shop.css') }}">
     <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css') }}">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
-    @if ($favicon = core()->getCurrentChannel()->favicon_url)
+    
+     @if ($favicon = core()->getCurrentChannel()->favicon_url)
         <link rel="icon" sizes="16x16" href="{{ $favicon }}" />
     @else
         <link rel="icon" sizes="16x16" href="{{ bagisto_asset('images/favicon.ico') }}" />
@@ -56,8 +58,9 @@
 
                 {!! view_render_event('bagisto.shop.layout.content.before') !!}
 
-                @yield('content-wrapper')
-
+                <div class="container">
+                    @yield('content-wrapper')
+                </div>
                 {!! view_render_event('bagisto.shop.layout.content.after') !!}
 
             </div>

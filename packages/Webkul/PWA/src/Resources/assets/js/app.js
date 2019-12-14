@@ -4,7 +4,7 @@ import router            from './router';
 import App               from './components/app';
 import VueCurrencyFilter from 'vue-currency-filter'
 import i18n              from './plugins/i18n';
-import './plugins/push-notification';
+// import './plugins/push-notification';
 // import './../../../../../../../public/firebase-messaging-sw';     // (File from the public folder)
 // import './../../../../publishable/pwa/firebase-messaging-sw';    //  (File from the pwa foder where main service-worker is kept)
 
@@ -19,11 +19,11 @@ axios.defaults.baseURL = window.config.app_base_url;
 require('./bootstrap');
 
 Vue.use(VueCurrencyFilter, {
-    symbol : '$',
+    symbol : 'đ',
     thousandsSeparator: ',',
-    fractionCount: 2,
+    fractionCount: 0,
     fractionSeparator: '.',
-    symbolPosition: 'front',
+    symbolPosition: 'back',
     symbolSpacing: false
 });
 

@@ -13,7 +13,14 @@ return [
         'nhienphan' => [
             'views_path' => 'resources/themes/nhienphan/views',
             'assets_path' => 'public/themes/nhienphan/assets',
-            'name' => 'Bliss',
+            'name' => 'NhienPhan',
+            'parent' => 'default'
+        ],
+
+        'sumi' => [
+            'views_path' => 'resources/themes/sumi/views',
+            'assets_path' => 'public/themes/sumi/assets',
+            'name' => 'sumi',
             'parent' => 'default'
         ]
     ]

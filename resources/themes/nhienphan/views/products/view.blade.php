@@ -10,7 +10,8 @@
 @stop
 
 @section('content-wrapper')
-
+ 
+    {{ Breadcrumbs::render('product', $product ) }}
     {!! view_render_event('bagisto.shop.products.view.before', ['product' => $product]) !!}
 
     <section class="product-detail">
@@ -64,23 +65,6 @@
 
                         @include ('shop::products.view.bundle-options')
                         
-                        {!! view_render_event('bagisto.shop.products.view.description.before', ['product' => $product]) !!}
-
-                        <accordian :title="'{{ __('shop::app.products.description') }}'" :active="true">
-                            <div slot="header">
-                                {{ __('shop::app.products.description') }}
-                                <i class="icon expand-icon right"></i>
-                            </div>
-
-                            <div slot="body">
-                                <div class="full-description">
-                                    {!! $product->description !!}
-                                </div>
-                            </div>
-                        </accordian>
-
-                        {!! view_render_event('bagisto.shop.products.view.description.after', ['product' => $product]) !!}
-
                         @include ('shop::products.view.attributes')
 
                         @include ('shop::products.view.reviews')
@@ -88,6 +72,18 @@
                 </div>
             </product-view>
         </div>
+
+
+        {!! view_render_event('bagisto.shop.products.view.description.before', ['product' => $product]) !!}
+
+        <h3>{{ __('shop::app.products.description') }}</h3>
+        <hr/>
+        <div class="full-description">
+            {!! $product->description !!}
+        </div>
+
+
+        {!! view_render_event('bagisto.shop.products.view.description.after', ['product' => $product]) !!}
 
         @include ('shop::products.view.related-products')
 

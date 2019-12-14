@@ -7,7 +7,7 @@
 
     <div class="dropdown-toggle">
         <a class="cart-link" href="{{ route('shop.checkout.cart.index') }}">
-            <span class="icon cart-icon"></span>
+                <i class="las la-shopping-cart la-lg"></i>
         </a>
 
         <span class="name">
@@ -15,7 +15,7 @@
             <span class="count"> ({{ $cart->items->count() }})</span>
         </span>
 
-        <i class="icon arrow-down-icon"></i>
+        <i class="las la-angle-down"></i>
     </div>
 
     <div class="dropdown-list" style="display: none; top: 52px; right: 0px;">
@@ -98,7 +98,7 @@
 
     <div class="dropdown-toggle">
         <div style="display: inline-block; cursor: pointer;">
-            <span class="icon cart-icon"></span>
+            <i class="las la-shopping-cart la-lg"></i>
             <span class="name">{{ __('shop::app.minicart.cart') }}<span class="count"> ({{ __('shop::app.minicart.zero') }}) </span></span>
         </div>
     </div>

@@ -138,7 +138,7 @@ class Cart {
         if (! $cart && ! $cart = $this->create($data))
             return;
 
-        $product = $this->productRepository->findOneByField('id', $productId);
+        $product = $this->productRepository->findOneByField('id',  (int)$productId);
 
         $cartProducts = $product->getTypeInstance()->prepareForCart($data);
 

@@ -2,7 +2,7 @@
 
 {!! view_render_event('bagisto.shop.products.list.toolbar.before') !!}
 
-<div class="top-toolbar mb-35">
+<div class="top-toolbar mb-10">
 
     <div class="page-info">
         <span>
@@ -20,21 +20,21 @@
         <div class="view-mode">
             @if ($toolbarHelper->isModeActive('grid'))
                 <span class="grid-view">
-                    <i class="icon grid-view-icon"></i>
+                        <i class="las la-border-all la-2x"></i>
                 </span>
             @else
                 <a href="{{ $toolbarHelper->getModeUrl('grid') }}" class="grid-view">
-                    <i class="icon grid-view-icon"></i>
+                        <i class="las la-border-all la-2x"></i>
                 </a>
             @endif
 
             @if ($toolbarHelper->isModeActive('list'))
                 <span class="list-view">
-                    <i class="icon list-view-icon"></i>
+                        <i class="las la-list la-2x"></i>
                 </span>
             @else
                 <a href="{{ $toolbarHelper->getModeUrl('list') }}" class="list-view">
-                    <i class="icon list-view-icon"></i>
+                        <i class="las la-list la-2x"></i>
                 </a>
             @endif
         </div>

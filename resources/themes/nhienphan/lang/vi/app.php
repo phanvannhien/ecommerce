@@ -15,31 +15,31 @@ return [
     ],
 
     'home' => [
-        'page-title' => 'Nhien phan ok',
-        'featured-products' => 'Sản phẩm nổi bật Products',
+        'page-title' => 'Nhien phan',
+        'featured-products' => 'Sản phẩm nổi bật',
         'new-products' => 'New Products',
         'verify-email' => 'Verify Your Email Account',
         'resend-verify-email' => 'Resend Verification Email'
     ],
 
     'header' => [
-        'title' => 'Account',
+        'title' => 'Tài khoản',
         'dropdown-text' => 'Manage Cart, Orders & Wishlist',
-        'sign-in' => 'Sign In',
-        'sign-up' => 'Sign Up',
-        'account' => 'Account',
-        'cart' => 'Cart',
-        'profile' => 'Profile',
-        'wishlist' => 'Wishlist',
-        'cart' => 'Cart',
-        'logout' => 'Logout',
-        'search-text' => 'Search products here'
+        'sign-in' => 'Đăng nhập',
+        'sign-up' => 'Đăng ký',
+        'account' => 'Tài khoản',
+        'cart' => 'Giỏ hàng',
+        'profile' => 'Hồ sơ',
+        'wishlist' => 'Yêu thích',
+        'cart' => 'Giỏ hàng',
+        'logout' => 'Đăng xuất',
+        'search-text' => 'Tìm kiếm'
     ],
 
     'minicart' => [
         'view-cart' => 'View Shopping Cart',
         'checkout' => 'Checkout',
-        'cart' => 'Cart',
+        'cart' => 'Gior hàng',
         'zero' => '0'
     ],
 
@@ -96,7 +96,7 @@ return [
             'lastname' => 'Tên',
             'email' => 'Email',
             'password' => 'Mật khẩu',
-            'confirm_pass' => 'Confirm Password',
+            'confirm_pass' => 'Nhắc lại mật khẩu',
             'button_title' => 'Đăng ký',
             'agree' => 'Đồng ý',
             'terms' => 'Điều khoản',
@@ -120,13 +120,13 @@ return [
         ],
 
         'login-form' => [
-            'page-title' => 'Customer - Login',
-            'title' => 'Sign In',
+            'page-title' => 'Đăng nhập',
+            'title' => 'Đăng nhập',
             'email' => 'Email',
-            'password' => 'Password',
-            'forgot_pass' => 'Forgot Password?',
-            'button_title' => 'Sign In',
-            'remember' => 'Remember Me',
+            'password' => 'Mật khẩu',
+            'forgot_pass' => 'Quên mật khẩu?',
+            'button_title' => 'Đăng nhập',
+            'remember' => 'Ghi nhớ',
             'footer' => '© Copyright 2018 Webkul Software, All rights reserved',
             'invalid-creds' => 'Please Check Your Credentials And Try Again',
             'verify-first' => 'Verify Your Email Account First',
@@ -134,23 +134,23 @@ return [
         ],
 
         'forgot-password' => [
-            'title' => 'Recover Password',
+            'title' => 'Khôi phục mật khẩu',
             'email' => 'Email',
-            'submit' => 'Submit',
-            'page_title' => 'Customer - Forgot Password Form'
+            'submit' => 'Gửi đi',
+            'page_title' => 'Quên mật khẩu'
         ],
 
         'reset-password' => [
-            'title' => 'Reset Password',
-            'email' => 'Registered Email',
-            'password' => 'Password',
-            'confirm-password' => 'Confirm Password',
-            'back-link-title' => 'Back to Sign In',
-            'submit-btn-title' => 'Reset Password'
+            'title' => 'Đặt lại mật khẩu',
+            'email' => 'Email',
+            'password' => 'Mật khẩu',
+            'confirm-password' => 'Nhắc lại mật khẩu',
+            'back-link-title' => 'Đăng nhập',
+            'submit-btn-title' => 'Gửi đi'
         ],
 
         'account' => [
-            'dashboard' => 'Customer - Edit Profile',
+            'dashboard' => 'Cập nhật hồ sơ',
             'menu' => 'Menu',
 
             'profile' => [

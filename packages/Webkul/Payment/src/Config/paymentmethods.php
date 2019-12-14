@@ -27,5 +27,15 @@ return [
         'active' => true,
         'business_account' => 'test@webkul.com',
         'sort' => 3
+    ],
+
+    'onepay' => [
+        'code' => 'onepay',
+        'title' => 'OnePay',
+        'description' => 'OnePay payment',
+        'class' => '\Webkul\Payment\Payment\OnePay',
+        'sandbox' => true,
+        'active' => true
     ]
+
 ];

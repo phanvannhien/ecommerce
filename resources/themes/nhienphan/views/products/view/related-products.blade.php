@@ -10,12 +10,12 @@
             <span class="border-bottom"></span>
         </div>
 
-        <div class="product-grid-4">
+        <div class="row align-items-stretch justify-content-start">
 
             @foreach ($relatedProducts as $related_product)
-
+            <div class="col-md-4 col-lg-3">
                 @include ('shop::products.list.card', ['product' => $related_product])
-
+            </div>
             @endforeach
 
         </div>

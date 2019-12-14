@@ -1,14 +1,14 @@
 import Vue     from 'vue';
 import VueI18n from 'vue-i18n';
-import en      from '../lang/en.json'
+import vi      from '../lang/vi.json'
 Vue.use(VueI18n);
 
 const messages = {
-    'en': en
+    'vi': vi
 };
 
 export default new VueI18n({
     locale: window.config.currentLocale.code, // set locale
-    fallbackLocale: 'en', // set fallback locale
+    fallbackLocale: 'vi', // set fallback locale
     messages, // set locale messages
 });
